@@ -14,6 +14,7 @@ docker run \
 	--env AZURE_STORAGE_ACCOUNT=${AZURE_STORAGE_ACCOUNT} \
 	--env AZURE_STORAGE_CONTAINER=${AZURE_STORAGE_CONTAINER} \
 	--env AZURE_STORAGE_ACCESS_KEY=${AZURE_STORAGE_ACCESS_KEY} \
+	--env BACKUP_NAME=${BACKUP_NAME} \
 	--rm rickmak/azure-postgres-backup:latest \
 ```
 
