@@ -1,4 +1,4 @@
 #!/bin/sh -eu
-sh dump.sh
+sh script/dump.sh
 sh archive.sh
 sh upload.sh

@@ -15,12 +15,12 @@ RUN echo "deb [arch=amd64] https://packages.microsoft.com/repos/azure-cli/ $(lsb
 RUN apt-get update
 RUN apt-get install -y azure-cli
 
-WORKDIR /script
+WORKDIR /
 RUN mkdir -p /script/dump
 RUN mkdir -p /dump
 ADD dump.sh /script/dump.sh
-ADD archive.sh /script/archive.sh
-ADD upload.sh /script/upload.sh
-ADD run.sh /script/run.sh
+ADD archive.sh /archive.sh
+ADD upload.sh /upload.sh
+ADD run.sh /run.sh
 
-CMD ["/script/run.sh"]
+CMD ["/run.sh"]
