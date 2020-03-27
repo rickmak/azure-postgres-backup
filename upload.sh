@@ -33,4 +33,4 @@ echo "Uploading dump.sql.tgs as ${BACKUP_NAME}"
 az storage blob upload \
   --container-name $AZURE_STORAGE_CONTAINER \
   --name ${BACKUP_NAME} \
-  --file /dump.sql.tgz
+  --file dump.sql.tgz
